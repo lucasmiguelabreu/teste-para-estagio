@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado das Sequências</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif
+    }
+    h1{
+        margin-left: 15px;
+    }
+    .paragrafos{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+</style>
+
+<body>
+    <!--
+    Descubra a lógica e complete o próximo elemento:
+
+
+
+    a) 1, 3, 5, 7, _
+
+    b) 2, 4, 8, 16, 32, 64, __
+
+    c) 0, 1, 4, 9, 16, 25, 36, __
+
+    d) 4, 16, 36, 64, __
+
+    e) 1, 1, 2, 3, 5, 8, __
+
+    f) 2,10, 12, 16, 17, 18, 19, __
+
+-->
+
+    <h1>Os resultados das sequências são:</h1>
+    <div class="paragrafos">
+        <p id="resultadoA"></p>
+        <p id="resultadoB"></p>
+        <p id="resultadoC"></p>
+        <p id="resultadoD"></p>
+        <p id="resultadoE"></p>
+        <p id="resultadoF"></p>
+    </div>
+</body>
+<script>
+    // Sequência a)
+    let sequenciaA = [1, 3, 5, 7];
+    let proximoA = sequenciaA[sequenciaA.length - 1] + 2;
+    document.getElementById("resultadoA").textContent = "Próximo elemento da sequência a): " + proximoA;
+
+    // Sequência b)
+    let sequenciaB = [2, 4, 8, 16, 32, 64];
+    let proximoB = sequenciaB[sequenciaB.length - 1] * 2;
+    document.getElementById("resultadoB").textContent = "Próximo elemento da sequência b): " + proximoB;
+
+    // Sequência c)
+    let sequenciaC = [0, 1, 4, 9, 16, 25, 36];
+    let proximoC = Math.pow(7, 2);
+    document.getElementById("resultadoC").textContent = "Próximo elemento da sequência c): " + proximoC;
+
+    // Sequência d)
+    let sequenciaD = [4, 16, 36, 64];
+    let proximoD = Math.pow(10, 2);
+    document.getElementById("resultadoD").textContent = "Próximo elemento da sequência d): " + proximoD;
+
+    // Sequência e)
+    let sequenciaE = [1, 1, 2, 3, 5, 8];
+    let proximoE = sequenciaE[sequenciaE.length - 1] + sequenciaE[sequenciaE.length - 2];
+    document.getElementById("resultadoE").textContent = "Próximo elemento da sequência e): " + proximoE;
+
+    // Sequência f)
+    let sequenciaF = [2, 10, 12, 16, 17, 18, 19];
+    let proximoF = sequenciaF[sequenciaF.length - 1] + 1;
+    document.getElementById("resultadoF").textContent = "Próximo elemento da sequência f): " + proximoF;
+</script>
+
+</html>

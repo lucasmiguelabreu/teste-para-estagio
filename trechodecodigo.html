@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do trecho do codigo</title>
+</head>
+
+<body>
+    <h1></h1>
+</body>
+<script>
+    let indice = 13;
+    let soma = 0;
+    let K = 0;
+
+    while (K < indice) {
+        K = K + 1;
+        soma = soma + K;
+    }
+
+    let resultadoH1 = document.createElement("h1");
+    resultadoH1.textContent = "O resultado é " + soma;
+
+    document.body.appendChild(resultadoH1);
+</script>
+
+</html>

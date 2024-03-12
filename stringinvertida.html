@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #entrada{
+        outline: none;
+        border: 1px solid gray;
+        padding: 5px;
+    }
+    button{
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 2px;
+    }
+    #resultado{
+        color: red;
+    }
+</style>
+<body>
+    <!--
+        5) Escreva um programa que inverta os caracteres de um string.
+
+
+        IMPORTANTE:
+
+        a) Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
+
+        b) Evite usar funções prontas, como, por exemplo, reverse
+    -->
+    <input type="text" id="entrada" placeholder="Digite uma string">
+    <button onclick="inverterString()">Inverter</button>
+    <h1 id="resultado"></h1>
+</body>
+<script>
+    function inverterString() {
+        let entrada = document.getElementById("entrada").value;
+        let resultado = "";
+        for (let i = entrada.length - 1; i >= 0; i--) {
+            resultado += entrada[i];
+        }
+        document.getElementById("resultado").textContent = resultado;
+    }
+</script>
+
+</html>
